@@ -1,0 +1,35 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React components",
+  "main": "js/index.js",
+  "scripts": {
+    "build:js": "npm run clean:js && webpack",
+    "watch:js": "npm run build:js && webpack --watch",
+    "clean:js": "rm -f build/$npm_package_name.$npm_package_version.js build/$npm_package_name.$npm_package_version.js.map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/green6erry/react-practice.git"
+  },
+  "keywords": [
+    "react",
+    "thinkful",
+    "javascript"
+  ],
+  "author": "AGB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/green6erry/react-practice/issues"
+  },
+  "homepage": "https://github.com/green6erry/react-practice#readme",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.11.1",
+    "webpack": "^1.13.1"
+  }
+}
